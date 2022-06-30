@@ -6,7 +6,7 @@
 
 int main()
 {
-// animation in terminal
+
 
     const char rocket[] =
             "           ^ \n\
