@@ -24,16 +24,15 @@ int main()
 ";
 
 int fps = 0, averageFps[10], averageFpsIndex = 0, inputTime;
-    printf("enter the testing time is seconds: \t");
+    printf("enter the testing time is seconds: (max value: 10) \t");
     scanf("%d", &inputTime);
     time_t lastTime = time(NULL), endTime = lastTime + inputTime;
     while (lastTime < endTime) {
-
         printf("--------FPS--------\n");
         printf("\033[31m");
         printf("\t%d\n", fps);
         printf("\033[0m");
-        fputs(rocket,stdout);
+        fputs(rocket, stdout);
         time_t currentTime = time(NULL);
         if (currentTime - lastTime >= 1) {
             lastTime = currentTime;
